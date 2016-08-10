@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <Jean-Baptiste HINNEBO> -- <Dev & Design> -- <>
+    <name> -- <role> -- <twitter>
 
 # THANKS
 
-    <Simplon>
+    <name>
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    HTML5, CSS3
+    jQuery, Modernizr
