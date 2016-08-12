@@ -65,6 +65,17 @@ body {
     background-color: rgb(70, 70, 70);
 }
 
+h3 {
+  font-size: 50px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 30px;
+}
 
 /*******************************************************************************
 HEADER
@@ -145,16 +156,24 @@ FOOTER
 *******************************************************************************/
 
 footer {
-    background-color: black;
-    height:150px;
+    background-color: rgb(220, 220, 220);
+    width:100%;
+    padding: 1.4em;
 }
 
 
 
+#map {
+  height: 380px;
+}
 
+#coordonne_footer {
+  background-color: rgb(120, 220, 250);
+}
 
-
-
+#raiseau_spaciaux {
+  background-color: rgb(70, 220, 150);
+}
 
 
 
