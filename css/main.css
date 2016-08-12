@@ -83,11 +83,24 @@ header{
     margin:auto;
 }
 
+/*Barre de Navigation*/
+
+.nav_grande{
+  display:none;
+}
 
 nav {
-    height:5em;
-    background-color: rgb(180, 10, 10);
-    bottom:0;
+  background-color: rgb(210, 0, 0);
+  text-align: center;
+}
+
+
+nav ul a{
+  font-size: 17px ;
+  font-weight: bold;
+  color:white;
+  padding: 15px 5px;
+  text-decoration: none;
 }
 
 
@@ -98,28 +111,34 @@ CORPS DE TEXTE
 
 #carroussel{
     background-color: rgb(123, 123, 50);
-    height:15em;
+    height:18em;
 
 }
 
 #recherche{
     background-color: rgb(200, 150, 100);
-    height:15em;
-    display:flex;
-    flex-direction: row;
+    height:18em;
+    text-align: center;
 }
 
-input {
+#recherche form {
+    display: flex;
+    flex-direction: column;
 
-    width:20em;
-    margin:auto;
 
 }
 
-button {
-    height:1.5em;
-    width:70%;
+#recherche input{
+    margin:0.6em auto;
+    width: 90%;
 }
+
+#recherche button{
+    margin:0.6em auto;
+    width: 90%;
+    height:30px;
+}
+
 
 /*******************************************************************************
 FOOTER
@@ -144,8 +163,18 @@ footer {
    Media Queries
    ========================================================================== */
 
+
+
+
 @media only screen and (min-width: 35em) {
 
+    .navbar{
+      display:none;
+    }
+
+    .nav_grande{
+      display:block;
+    }
 
     #first_floor{
 
