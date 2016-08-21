@@ -60,21 +60,26 @@ textarea {
 /*******************************************************************************
 GENERAL
 *******************************************************************************/
-
-body {
-    background-color: rgb(70, 70, 70);
+#total {
+  color:white;
+  background-color: rgb(42, 42, 42);
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 3em;
 }
 
+
 h4 {
-  font-size: 40px;
+  font-size: 2.5em;
 }
 
 h5 {
-  font-size: 30px;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.3em;
 }
 
 /*******************************************************************************
@@ -107,7 +112,7 @@ nav {
 
 
 nav ul a{
-  font-size: 17px ;
+  font-size: 2em ;
   font-weight: bold;
   color:white;
   padding: 15px 5px;
@@ -118,7 +123,10 @@ nav ul a{
 /*******************************************************************************
 CORPS DE TEXTE
 *******************************************************************************/
-
+#first_floor{
+  margin-left: none;
+  margin-right: none;
+}
 
 #carroussel{
     background-color: rgb(123, 123, 50);
@@ -127,7 +135,6 @@ CORPS DE TEXTE
 }
 
 #recherche{
-    background-color: rgb(200, 150, 100);
     height:18em;
     text-align: center;
 }
@@ -139,16 +146,23 @@ CORPS DE TEXTE
 
 }
 
+#description {
+  margin : 2em;
+}
+
 #recherche input{
     margin:0.6em auto;
     width: 90%;
 }
 
 #recherche button{
-    margin:0.6em auto;
+    border-color:rgb(255, 100, 100);
+    background-color: rgb(250, 250, 250);
+    margin:0.8em auto;
     width: 90%;
     height:30px;
 }
+
 
 
 /*******************************************************************************
@@ -156,23 +170,26 @@ FOOTER
 *******************************************************************************/
 
 footer {
+    display:flex;
     background-color: rgb(220, 220, 220);
     width:100%;
     padding: 1.4em;
 }
 
+footer article {
+  margin-bottom:2em;
+}
 
+footer h4 {
+  font-size: 2.4em;
+}
+
+footer h5 {
+  font-size: 2em;
+}
 
 #map {
   height: 380px;
-}
-
-#coordonne_footer {
-  background-color: rgb(120, 220, 250);
-}
-
-#raiseau_spaciaux {
-  background-color: rgb(70, 220, 150);
 }
 
 
@@ -203,15 +220,28 @@ footer {
 
     #carroussel{
 
-        width:50%;
+        width:20em;
     }
 
     #recherche{
-        width:50%;
+        width:20em;
 
     }
 
+
+
 }
+
+
+@media only screen and (min-width: 65em) {
+
+  #first_floor{
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+
+}
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
