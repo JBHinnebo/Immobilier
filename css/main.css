@@ -452,17 +452,18 @@ i {
   .case_de_vente {
     display: flex;
     flex-wrap: wrap;
+    width:850px;
+    margin:auto;
 
   }
   .case_de_vente figure {
-    width:35%;
-    
+    padding:20px;
+
   }
 
   .case_de_vente article {
-    border-top: none;
-    border-left: 3px solid rgb(40, 120, 210);
-    margin-left: 45px;
+    height: auto;
+    margin-left: 5px;
     margin-bottom: 30px;
     padding:20px;
   }
@@ -521,6 +522,31 @@ i {
     .card:nth-child(4){
       display:block;
     }
+
+    /***********************************
+    CORPS DE TEXTE ////////// PAGE VENTE
+    ***********************************/
+
+    .case_de_vente {
+      display: flex;
+      flex-wrap: wrap;
+      width:1050px;
+      margin:auto;
+
+    }
+    .case_de_vente figure {
+      padding:20px;
+      width:40%;
+
+    }
+
+    .case_de_vente article {
+      height: auto;
+      margin-left: 5px;
+      margin-bottom: 30px;
+      padding:20px;
+    }
+
 
 }
 
