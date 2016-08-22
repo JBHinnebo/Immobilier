@@ -304,6 +304,43 @@ CORPS DE TEXTE ////////// PAGE VENTE
   border: 3px solid white;
 }
 
+/*******************************************************************************
+CORPS DE TEXTE ////////// PAGE CONTACT
+*******************************************************************************/
+
+#contact{
+  margin:60px 30px;
+}
+
+#contact input{
+  width:300px;
+  margin-bottom: 10px;
+}
+
+#contact button{
+  font-size: 18px;
+  font-weight: bold;
+  width:300px;
+  color:#eee;
+  background: none;
+}
+
+#horaire{
+  margin:40px 30px;
+}
+
+#horaire td{
+  padding:10px 50px;
+}
+
+#fiche_contact{
+  margin:40px 30px;
+}
+
+#contact button:hover{
+  border: 3px solid rgb(40, 120, 210);
+  background-color: rgb(40, 120, 210);
+}
 
 
 /*******************************************************************************
@@ -508,6 +545,34 @@ i {
     width:850px;
 }
 
+/***********************************
+CORPS DE TEXTE ////////// PAGE VENTE
+***********************************/
+
+  #corpsdutextecontact{
+    display:flex;
+    flex-wrap: wrap;
+    margin:auto;
+    width:750px;
+  }
+
+  #corpsdutextecontact h5{
+    margin-bottom: 40px;
+  }
+
+  #contact input{
+    width:500px;
+  }
+
+  #contact textarea{
+    width:500px;
+  }
+
+
+
+
+}
+
 
 
 @media only screen and (min-width: 65em) {
@@ -607,6 +672,37 @@ i {
     width:1050px;
 }
 
+
+/***********************************
+CORPS DE TEXTE ////////// PAGE CONTACT
+***********************************/
+
+  #corpsdutextecontact{
+    display:flex;
+    flex-wrap: wrap;
+    margin:auto;
+    width:1050px;
+  }
+
+  #contact button{
+    display: block;
+  }
+
+  #contact input{
+    width:300px;
+  }
+
+  #contact textarea{
+    width:300px;
+  }
+
+  #horaire{
+    margin-top: 70px;
+  }
+
+  #fiche_contact{
+    margin-top: 70px;
+  }
 
 }
 
