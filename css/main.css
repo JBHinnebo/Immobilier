@@ -71,7 +71,7 @@ body {
 
 h3 {
   font-family: 'Baloo Chettan', cursive;
-  color:rgb(210, 0, 0);
+  color:rgb(40, 120, 210);
   font-size: 2.8em;
 }
 
@@ -81,7 +81,7 @@ h4 {
 
 h5 {
   font-family: 'Baloo Chettan', cursive;
-  color:rgb(210, 0, 0);
+  color:rgb(40, 120, 210);
   font-size: 1.7em;
 }
 
@@ -111,7 +111,7 @@ header{
 
 nav {
   border-bottom: 10px solid rgb(30, 30, 30);
-  background-color: rgb(210, 0, 0);
+  background-color: rgb(40, 120, 210);
   text-align: center;
 }
 
@@ -126,7 +126,7 @@ nav ul a{
 
 
 /*******************************************************************************
-CORPS DE TEXTE
+CORPS DE TEXTE ////////// PAGE D'ACCEUIL
 *******************************************************************************/
 #corpsdutexte{
   margin-left: 5%;
@@ -140,26 +140,23 @@ CORPS DE TEXTE
   margin-top: 2em;
   margin-bottom: 3em;
   border-right: 2px white;
-  border-bottom: 2px white;
   border-bottom-right-radius:3em;
 }
 
 
 
 #recherche{
-    background-color: rgb(210, 0, 0);
+    background-color: rgb(40, 120, 210);
     border-radius: 20px;
     padding-top:20px;
     margin-top: 2em;
-    height:360px;
+    height:350px;
     text-align: center;
 }
 
 #recherche form {
     display: flex;
     flex-direction: column;
-
-
 }
 
 #recherche input{
@@ -201,6 +198,7 @@ CORPS DE TEXTE
 /*nouveautée*/
 
 #nouveaute_maintenant{
+  border-top: 3px solid rgb(40, 120, 210);
   display:flex;
   flex-direction:row;
   flex-wrap: wrap;
@@ -211,7 +209,8 @@ CORPS DE TEXTE
   color:rgb(40, 40, 40);
   margin-top: 30px;
   margin-bottom: 50px;
-  width:450px;
+  width:430px;
+  height: 450px;
 }
 
 .card img {
@@ -220,9 +219,70 @@ CORPS DE TEXTE
 }
 
 .card .btn {
-  background-color: rgb(210, 0, 0);
+  position:absolute;
+  background-color: rgb(40, 120, 210);
   border:none;
+  bottom:10px;
 }
+
+
+/*******************************************************************************
+CORPS DE TEXTE ////////// PAGE VENTE
+*******************************************************************************/
+
+#corps_de_texte_vente{
+  margin:20px;
+  display: flex;
+}
+
+.case_de_vente {
+  color:#444;
+  padding:10px;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  background-color: #ddd ;
+
+}
+
+.article_de_vente{
+  border-top: 3px solid rgb(40, 120, 210);
+  margin-top: 20px;
+}
+
+.article_de_vente h4 {
+  margin: 20px auto 10px;
+}
+
+.article_de_vente span {
+  margin-left: 10px;
+  font-size: 19px;
+}
+
+.article_de_vente .prix{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#Interresse{
+  font-size: 30px;
+  color:rgb(40, 120, 210);
+  margin-top:20px;
+  margin:10px auto 10px;
+  width:100%;
+  height: 50px;
+  margin:auto;
+  background: none;
+  border: 3px solid rgb(40, 120, 210);
+  border-radius: 10px;
+}
+
+#Interresse:hover{
+  margin:auto;
+  color:white;
+  background: rgb(40, 120, 210);
+}
+
+
 
 
 /*******************************************************************************
@@ -243,14 +303,13 @@ footer {
   margin:auto;
   width:350px;
   text-align: center;
-
 }
 
 footer article{
-  margin-top:20px;
+  margin-top:10px;
   margin-left: auto;
   margin-right: auto;
-  width:450px;
+  width:350px;
 }
 
 #map {
@@ -269,7 +328,29 @@ footer article{
   margin-bottom: 1em;
 }
 
+footer .sociaux {
+  margin-top: 40px;
+  text-align: center;
+}
 
+footer .copyright {
+  text-align: center;
+}
+
+i {
+  padding: 10px;
+  color:#333;
+}
+
+.sociaux i:hover {
+  color:rgb(40, 120, 210);;
+}
+
+
+.button-back-top a {
+  color: #333;
+  text-decoration: none;
+}
 
 
 /* ==========================================================================
@@ -316,7 +397,7 @@ footer article{
         padding-top:20px;
         margin-top: 2em;
         margin-left: 1em;
-        height:340px;
+        height:290px;
         margin-top: 0em;
         width:30%;
 
@@ -326,6 +407,7 @@ footer article{
       flex-direction: row;
       justify-content: space-between;
       width:750px;
+      height: 300px;
       margin:auto;
     }
 
@@ -347,6 +429,7 @@ footer article{
     .card {
       margin-top: 30px;
       width:240px;
+      height:350px;
     }
 
     .card img {
@@ -357,6 +440,33 @@ footer article{
   .card:nth-child(4){
     display:none;
   }
+
+  i {
+    padding: 25px;
+  }
+
+  /***********************************
+  CORPS DE TEXTE ////////// PAGE VENTE
+  ***********************************/
+
+  .case_de_vente {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .case_de_vente figure {
+    width:35%;
+    
+  }
+
+  .case_de_vente article {
+    border-top: none;
+    border-left: 3px solid rgb(40, 120, 210);
+    margin-left: 45px;
+    margin-bottom: 30px;
+    padding:20px;
+  }
+
 
 }
 
@@ -395,7 +505,7 @@ footer article{
     }
 
     #totalfooter {
-      width:1000px;
+      width:1300px;
       margin:auto;
     }
 
