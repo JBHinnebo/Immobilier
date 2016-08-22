@@ -233,13 +233,13 @@ CORPS DE TEXTE ////////// PAGE VENTE
 #corps_de_texte_vente{
   margin:20px;
   display: flex;
+  flex-direction: column;
+
 }
 
 .case_de_vente {
   color:#444;
   padding:10px;
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
   background-color: #ddd ;
 
 }
@@ -283,6 +283,27 @@ CORPS DE TEXTE ////////// PAGE VENTE
 }
 
 
+#recherche_vente{
+  display:flex;
+  flex-direction: column;
+  margin:35px auto;;
+  background-color: rgb(40, 120, 210);
+  padding:20px;
+  color:#444;
+
+}
+
+#recherche_vente input {
+  margin:3px 10%;
+  width:80%;
+}
+
+#recherche_button {
+  margin:30px 10% 0;
+  width:80%;
+  border: 3px solid white;
+}
+
 
 
 /*******************************************************************************
@@ -315,21 +336,21 @@ footer article{
 #map {
   height: 380px;
   margin-top: 20px;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 #coordonne_footer {
   margin-top: 20px;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 #raiseau_spaciaux {
   margin-top:20px;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 footer .sociaux {
-  margin-top: 40px;
+  margin-top: 10px;
   text-align: center;
 }
 
@@ -458,6 +479,7 @@ i {
   }
   .case_de_vente figure {
     padding:20px;
+    width:50%;
 
   }
 
@@ -468,7 +490,22 @@ i {
     padding:20px;
   }
 
+  #recherche_vente input {
+    margin:5px 1px;
+    width:400px;
+  }
 
+  #recherche_button {
+    margin:30px auto 0;
+    width:100%;
+    border: 3px solid white;
+  }
+
+  #recherche_vente{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:850px;
 }
 
 
@@ -527,25 +564,48 @@ i {
     CORPS DE TEXTE ////////// PAGE VENTE
     ***********************************/
 
+
+
     .case_de_vente {
       display: flex;
-      flex-wrap: wrap;
       width:1050px;
       margin:auto;
 
     }
     .case_de_vente figure {
       padding:20px;
-      width:40%;
+      width:60%;
 
     }
 
     .case_de_vente article {
       height: auto;
+      width: auto;
       margin-left: 5px;
       margin-bottom: 30px;
       padding:20px;
     }
+  #interresse {
+    width:750px;
+  }
+
+  #recherche_vente input {
+    margin:3px auto;
+    width:500px;
+  }
+
+  #recherche_button {
+    margin:30px auto 0;
+    width:100%;
+    border: 3px solid white;
+  }
+
+  #recherche_vente{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:1050px;
+}
 
 
 }
