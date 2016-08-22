@@ -13,9 +13,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="css/main.css">
+
+<!-- font family -->
+         <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Dosis" rel="stylesheet"> 
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
@@ -93,13 +96,13 @@
 
 
 
-
+<section id=corpsdutexte>
     <section id=first_floor>
         <section id=carroussel>
 
             <figure class=carroussel_image>
 
-              <img>
+              <img src="img/maison_3.jpg" alt="image d'une belle maison au forme arrondit." width="100%" height="auto">
 
             </figure>
 
@@ -118,10 +121,10 @@
 
             <form>
 
-              <input type="text" name="Localisation" value="Où"></input>
-              <input type="text" name="Surface" value="Surface"></input>
-              <input type="text" name="Localisation" value="Prix Minimal"></input>
-              <input type="text" name="Localisation" value="Prix Maximal"></input>
+              <input type="text" name="Localisation" value="Où?"></input>
+              <input type="text" name="Surface" value="Surface?"></input>
+              <input type="text" name="Localisation" value="Prix Minimal?"></input>
+              <input type="text" name="Localisation" value="Prix Maximal?"></input>
 
               <button type=button id=recherche_button> Recherche </button>
 
@@ -137,74 +140,108 @@
 
                 <h3>THE STOP</h3>
                 <h4>Agence Immobilière</h3>
-                <figure></figure>
 
-                <article>
-                    <p>
-                        THE STOP est une agence immobilière présente depuis de nombreuses années au cœur de la métropole Lilloise.
-                        Spécialiste de la ville de Roubaix depuis plus de 45 ans, notre équipe, dynamique et dévouée, dispose d'une parfaite connaissance du marché immobilier local et du l'immobilsme politique.
-                        <br>
-                        En véritable acteur du logement, nous mettons tout en œuvre pour sécuriser vos projets immobiliers.
-                        Grâce à la formation régulière de nos collaborateurs, nous trouvons la solution immobilière adaptée à chacune de vos demandes, que ce soit pour l'achat , la vente, la location et la gestion locative.
-                        <br>
-                        Notre appartenance à la ZAWARUDO et notre partenariat avec nos 3 confrères locaux, nous permettent de répondre à vos besoins dans les plus brefs délais.
-                        Nos conseillers immobiliers THE STOP restent à votre entière disposition pour plus de renseignements.
-                        <br>
-                        Giorno Giovani
-                    </p>
-                </article>
+                <container id=description_enpage>
+                    <figure><img src="img/facade_agence.jpg" alt="facade de l'agence THE STOP. Belle batisse ayant en vitrine nombre d'exemple de maison à vendre." width="100%" height="350" margin="auto" /></figure>
 
+                    <article>
+                        <p>
+                            THE STOP est une agence immobilière présente depuis de nombreuses années au cœur de la métropole Lilloise.
+                            Spécialiste de la ville de Roubaix depuis plus de 45 ans, notre équipe, dynamique et dévouée, dispose d'une parfaite connaissance du marché immobilier local et du l'immobilsme politique.
+                            <br>
+                            En véritable acteur du logement, nous mettons tout en œuvre pour sécuriser vos projets immobiliers.
+                            Grâce à la formation régulière de nos collaborateurs, nous trouvons la solution immobilière adaptée à chacune de vos demandes, que ce soit pour l'achat , la vente, la location et la gestion locative.
+                            <br>
+                            Notre appartenance à la ZAWARUDO et notre partenariat avec nos 3 confrères locaux, nous permettent de répondre à vos besoins dans les plus brefs délais.
+                            Nos conseillers immobiliers THE STOP restent à votre entière disposition pour plus de renseignements.
+                            <br >
+                        </p>
+
+                        <p>Giorno Giovani</p>
+
+                    </article>
+                </container>
             </section>
 
-            <figure>
+            <h3>Nouveauté</h3>
 
-                <img>
+            <container id=nouveaute_maintenant>
+                <div class="card">
+                  <img class="card-img-top" src="img/maison_1.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Roubaix</h4>
+                    <p class="card-text">600 000 Euros</p>
+                    <a href="#" class="btn btn-primary">Intérréssé?</a>
+                  </div>
+                </div>
 
-            </figure>
+                <div class="card">
+                  <img class="card-img-top" src="img/maison_7.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Roubaix</h4>
+                    <p class="card-text">560 000 Euros</p>
+                    <a href="#" class="btn btn-primary">Intérréssé?</a>
+                  </div>
+                </div>
 
+                <div class="card">
+                  <img class="card-img-top" src="img/maison_5.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Roubaix</h4>
+                    <p class="card-text">954 000 Euros</p>
+                    <a href="#" class="btn btn-primary">Intérréssé?</a>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img class="card-img-top" src="img/maison_2.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Roubaix</h4>
+                    <p class="card-text">640 000 Euros</p>
+                    <a href="#" class="btn btn-primary">Intérréssé?</a>
+                  </div>
+                </div>
+            </container>
         </section>
+
+    </section>
 
 
         <footer>
+            <div id=totalfooter>
 
+                    <section id='map'>
 
-            <h4>CONTACTEZ NOUS</h4>
+                        <h5>Où sommes-nous?</h5>
 
-            <div class="row">
+                        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:350px;width:95%;margin:10px 2.5%;'><div id='gmap_canvas' style='height:250px;width:95%;margin:10px 2.5%;' alt="GoogleMap"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(50.66964160000001,3.1838319999999385),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.66964160000001,3.1838319999999385)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>129 avenue Charles Fourier<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 
-                <section id='map' class="col-lg-4 col-md-12">
+                    </section>
 
-                    <h5>Où sommes-nous?</h5>
+                    <article id='coordonne_footer'>
 
-                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:350px;width:95%;margin:10px 2.5%;'><div id='gmap_canvas' style='height:350px;width:95%;margin:10px 2.5%;' alt="GoogleMap"></div><div><small><a href="http://embedgooglemaps.com">Embed your Google Map here!</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Lees hier ervaringen van diverse binaire opties aanbieders</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(50.66964160000001,3.1838319999999385),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(50.66964160000001,3.1838319999999385)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>129 avenue Charles Fourier<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                        <h5>Notre agence</h5>
 
-                </section>
+                        <p>
+                            THE STOP est une agence immobilière présente depuis de nombreuses années au cœur de la métropole Lilloise.
+                            <br>
+                            Spécialiste de la ville de Roubaix depuis plus de 45 ans, notre équipe, dynamique et dévouée, dispose d'une parfaite connaissance du marché immobilier local.
+                        </p>
 
-                <article id='coordonne_footer' class="col-lg-4 col-md-6">
+                    </article>
 
-                    <h5>Notre agence</h5>
+                    <article id='raiseau_spaciaux'>
 
-                    <p>
-                        THE STOP est une agence immobilière présente depuis de nombreuses années au cœur de la métropole Lilloise.
-                        <br>
-                        Spécialiste de la ville de Roubaix depuis plus de 45 ans, notre équipe, dynamique et dévouée, dispose d'une parfaite connaissance du marché immobilier local.
-                    </p>
-
-                </article>
-
-                <article id='raiseau_spaciaux' class="col-lg-4 col-md-6">
-
-                    <h5>Nous contacter</h5>
-                    <p> <strong>Solima</strong><br>
-                        129 Avenue Charles Fourier<br>
-                        59100 Roubaix<br>
-                        Tél. : 03 20 03 03 03<br>
-                        Fax : 03 03 03 03 03<br>
-                        Email : THE_STOP.com</p>
-                </article>
+                        <h5>Nous contacter</h5>
+                        <p> <strong>THE STOP</strong><br>
+                            129 Avenue Charles Fourier<br>
+                            59100 Roubaix<br>
+                            Tél. : 03 20 03 03 03<br>
+                            Fax : 03 03 03 03 03<br>
+                            Email : THE_STOP.com</p>
+                    </article>
 
             </div>
-
 
         </footer>
 

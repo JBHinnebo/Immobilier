@@ -60,27 +60,31 @@ textarea {
 /*******************************************************************************
 GENERAL
 *******************************************************************************/
-#total {
-  color:white;
-  background-color: rgb(42, 42, 42);
+
+body {
+    background-color: rgb(50, 50, 50);
+    color: rgb(230, 230, 230);
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.3em;
+
 }
 
 h3 {
-  font-size: 3em;
+  font-family: 'Baloo Chettan', cursive;
+  color:rgb(210, 0, 0);
+  font-size: 2.8em;
 }
 
-
 h4 {
-  font-size: 2.5em;
+  font-size: 1.9em;
 }
 
 h5 {
-  font-size: 2em;
+  font-family: 'Baloo Chettan', cursive;
+  color:rgb(210, 0, 0);
+  font-size: 1.7em;
 }
 
-p {
-  font-size: 1.3em;
-}
 
 /*******************************************************************************
 HEADER
@@ -106,13 +110,14 @@ header{
 }
 
 nav {
+  border-bottom: 10px solid rgb(30, 30, 30);
   background-color: rgb(210, 0, 0);
   text-align: center;
 }
 
 
 nav ul a{
-  font-size: 2em ;
+  font-size: 1.76em ;
   font-weight: bold;
   color:white;
   padding: 15px 5px;
@@ -123,19 +128,30 @@ nav ul a{
 /*******************************************************************************
 CORPS DE TEXTE
 *******************************************************************************/
+#corpsdutexte{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+/*recherche*/
+
 #first_floor{
-  margin-left: none;
-  margin-right: none;
+  margin-top: 2em;
+  margin-bottom: 3em;
+  border-right: 2px white;
+  border-bottom: 2px white;
+  border-bottom-right-radius:3em;
 }
 
-#carroussel{
-    background-color: rgb(123, 123, 50);
-    height:18em;
 
-}
 
 #recherche{
-    height:18em;
+    background-color: rgb(210, 0, 0);
+    border-radius: 20px;
+    padding-top:20px;
+    margin-top: 2em;
+    height:360px;
     text-align: center;
 }
 
@@ -146,23 +162,67 @@ CORPS DE TEXTE
 
 }
 
-#description {
-  margin : 2em;
-}
-
 #recherche input{
+    color:rgb(40, 40, 40);
     margin:0.6em auto;
     width: 90%;
 }
 
 #recherche button{
-    border-color:rgb(255, 100, 100);
-    background-color: rgb(250, 250, 250);
-    margin:0.8em auto;
+    color:rgb(40, 40, 40);
+    margin:1.2em auto;
     width: 90%;
     height:30px;
 }
 
+/*description*/
+
+#description{
+  margin:1em;
+}
+
+#description figure{
+  height:350px;
+  margin-bottom: 1.5em;
+}
+
+#description h3{
+}
+
+#description h4{
+  margin-bottom: 2em;
+}
+
+#description_enpage{
+  display:flex;
+  flex-direction: column;
+}
+
+/*nouveautée*/
+
+#nouveaute_maintenant{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  color:rgb(40, 40, 40);
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width:450px;
+}
+
+.card img {
+  width:430px;
+  padding:10px;
+}
+
+.card .btn {
+  background-color: rgb(210, 0, 0);
+  border:none;
+}
 
 
 /*******************************************************************************
@@ -170,26 +230,43 @@ FOOTER
 *******************************************************************************/
 
 footer {
-    display:flex;
-    background-color: rgb(220, 220, 220);
-    width:100%;
-    padding: 1.4em;
+  color:rgb(40, 40, 40);
+  background-color: rgb(220, 220, 220);
+  width:100%;
+  padding: 1.4em;
+  border-top: 25px solid rgb(30, 30, 30);
 }
 
-footer article {
-  margin-bottom:2em;
+#totalfooter {
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+  width:350px;
+  text-align: center;
+
 }
 
-footer h4 {
-  font-size: 2.4em;
-}
-
-footer h5 {
-  font-size: 2em;
+footer article{
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  width:450px;
 }
 
 #map {
   height: 380px;
+  margin-top: 20px;
+  margin-bottom: 1em;
+}
+
+#coordonne_footer {
+  margin-top: 20px;
+  margin-bottom: 1em;
+}
+
+#raiseau_spaciaux {
+  margin-top:20px;
+  margin-bottom: 1em;
 }
 
 
@@ -203,6 +280,95 @@ footer h5 {
 
 
 @media only screen and (min-width: 35em) {
+
+    body {
+      font-size: 1em;
+    }
+
+    #corpsdutexte{
+      width:750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    .navbar{
+      display:none;
+    }
+
+    .nav_grande{
+      display:block;
+      border-bottom: 10px solid rgb(30, 30, 30);
+    }
+
+    #first_floor{
+
+        display:flex;
+    }
+
+
+    #carroussel{
+
+        width:70%;
+    }
+
+    #recherche{
+        padding-top:20px;
+        margin-top: 2em;
+        margin-left: 1em;
+        height:340px;
+        margin-top: 0em;
+        width:30%;
+
+    }
+
+    #totalfooter {
+      flex-direction: row;
+      justify-content: space-between;
+      width:750px;
+      margin:auto;
+    }
+
+    #map{
+      width:400px;
+    }
+
+    #description_enpage{
+      display:flex;
+      flex-direction:row;
+    }
+
+    #description_enpage img {
+      width:350px;
+      height: auto;
+      margin-right: 30px;
+    }
+
+    .card {
+      margin-top: 30px;
+      width:240px;
+    }
+
+    .card img {
+      padding:10px;
+      width:240px;
+    }
+
+  .card:nth-child(4){
+    display:none;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 65em) {
+
+    #corpsdutexte{
+      width:1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     .navbar{
       display:none;
@@ -220,25 +386,31 @@ footer h5 {
 
     #carroussel{
 
-        width:20em;
+        width:70%;
     }
 
     #recherche{
-        width:20em;
+        width:30%;
 
     }
 
+    #totalfooter {
+      width:1000px;
+      margin:auto;
+    }
 
+    .card {
+      margin-top: 30px;
+      width:230px;
+    }
 
-}
+    .card img {
+      width:220px;
+    }
 
-
-@media only screen and (min-width: 65em) {
-
-  #first_floor{
-    margin-left: 10em;
-    margin-right: 10em;
-  }
+    .card:nth-child(4){
+      display:block;
+    }
 
 }
 
