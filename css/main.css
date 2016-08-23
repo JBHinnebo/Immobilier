@@ -245,6 +245,7 @@ CORPS DE TEXTE ////////// PAGE VENTE
   margin:20px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 
 }
 
@@ -536,6 +537,7 @@ i {
     margin-left: 5px;
     margin-bottom: 30px;
     padding:20px;
+    max-width: 340px;
   }
 
   #recherche_vente input {
