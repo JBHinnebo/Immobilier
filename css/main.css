@@ -66,8 +66,8 @@ body {
     color: rgb(230, 230, 230);
     font-family: 'Dosis', sans-serif;
     font-size: 1.3em;
-
 }
+
 
 h3 {
   font-family: 'Baloo Chettan', cursive;
@@ -75,9 +75,11 @@ h3 {
   font-size: 2.8em;
 }
 
+
 h4 {
   font-size: 1.9em;
 }
+
 
 h5 {
   font-family: 'Baloo Chettan', cursive;
@@ -95,12 +97,22 @@ header{
     height:15em;
 }
 
+#logos{
+  text-align: center;
+  margin: auto;
+  padding:30px;
+  height: 100px;
+  width:700px;
+  color:#333;
+  font-size: 145px;
+  font-family: 'Baloo Chettan', cursive;
 
-#logos {
-    height:14em;
-    width:23em;
-    background-color: steelblue;
-    margin:auto;
+}
+
+#logos span{
+  font-family: 'Indie Flower', cursive;
+  margin-right: -40px;
+  font-size: 95px;
 }
 
 /*Barre de Navigation*/
@@ -147,7 +159,6 @@ CORPS DE TEXTE ////////// PAGE D'ACCEUIL
 
 #recherche{
     background-color: rgb(40, 120, 210);
-    border-radius: 20px;
     padding-top:20px;
     margin-top: 2em;
     height:350px;
@@ -273,7 +284,6 @@ CORPS DE TEXTE ////////// PAGE VENTE
   margin:auto;
   background: none;
   border: 3px solid rgb(40, 120, 210);
-  border-radius: 10px;
 }
 
 #Interresse:hover{
@@ -406,6 +416,7 @@ i {
 
 
 .button-back-top a {
+  margin: auto;
   color: #333;
   text-decoration: none;
 }
@@ -567,8 +578,6 @@ CORPS DE TEXTE ////////// PAGE VENTE
   #contact textarea{
     width:500px;
   }
-
-
 
 
 }
