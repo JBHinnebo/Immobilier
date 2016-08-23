@@ -241,7 +241,7 @@ CORPS DE TEXTE ////////// PAGE D'ACCEUIL
 CORPS DE TEXTE ////////// PAGE VENTE
 *******************************************************************************/
 
-#corps_de_texte_vente{
+.corps_de_texte_vente{
   margin:20px;
   display: flex;
   flex-direction: column;
@@ -274,7 +274,7 @@ CORPS DE TEXTE ////////// PAGE VENTE
   margin-bottom: 20px;
 }
 
-#Interresse{
+.Interresse{
   font-size: 30px;
   color:rgb(40, 120, 210);
   margin-top:20px;
@@ -286,7 +286,7 @@ CORPS DE TEXTE ////////// PAGE VENTE
   border: 3px solid rgb(40, 120, 210);
 }
 
-#Interresse:hover{
+.Interresse:hover{
   margin:auto;
   color:white;
   background: rgb(40, 120, 210);
